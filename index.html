@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site do Casamento</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+
+
+</head>
+
+
+
+<body>
+
+    <audio id="bg-music" control autoplay>
+        <source src="casamento.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+
+
+
+
+
+
+
+    
+
+
+<header>
+    <div class="overlay">
+        <div class="header-content">
+            <h1>Casamento de Italo & Joyce </h1>
+            <p>Nossa Data: 01 de Junho de 2024</p>
+            <p>Hora: 15:30 </p>
+            <p>Local: Rancho Miguel Vieira - Vitoria do Mearim</p>
+             <!-- Elemento para exibir o cronômetro -->
+              <!-- Elemento para exibir o cronômetro -->
+              <div id="countdown" class="countdown-container">
+                <div class="countdown-text">Faltam</div>
+                <div class="countdown-timer"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .terracota-sample {
+          width: 20px;
+          height: 20px;
+          background-color: #CC4E5D; /* terracota */
+          display: inline-block;
+          margin-right: 5px;
+        }
+    </style>
+
+
+
+<style>
+  .evento-background {
+    background-image: url('caminho/para/sua/imagem.jpg');
+    background-size: cover;
+    position: relative;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay2 {
+    background-color: rgba(0, 0, 0, 0.8); /* Ajuste o último valor para tornar o fundo mais escuro */
+    color: #ffffff;
+    padding: 20px;
+    max-width: 90%;
+    opacity: 0.9;
+
+    
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+    .terracota-sample {
+      width: 20px;
+      height: 20px;
+      background-color: #CC4E5D; /* terracota */
+      display: inline-block;
+      margin-right: 5px;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+
+<style>
+    .countdown-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .countdown-text {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .countdown-timer {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        animation: pulse 1s infinite alternate;
+        display: inline-block;
+    }
+
+
+    #countdown {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:#cc8105;
+    /*#333333;*/
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    animation: pulse 1s infinite alternate;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    #countdown {
+        font-size: 3vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        box-shadow: 0px 0px 6vw rgba(0, 0, 0, 0.5);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+</style>
+
+
+<section id="ceremony">
+    <div class="container">
+        <div class="evento-background">
+            <div class="overlay2">
+                <h2 ><center>Cerimônia</center></h2>
+                <div class="content">
+                    <p><strong>Chegada Antecipada:</strong><br>
+                    Pedimos gentilmente que cheguem com antecedência, pois a cerimônia começará pontualmente às 15:30. Queremos garantir que todos tenham tempo suficiente para se acomodar e desfrutar do evento sem pressa.</p>
+                
+                    <p><strong>Transporte para Convidados:</strong><br>
+                    Para maior comodidade dos nossos convidados, estaremos disponibilizando um ônibus que partirá das seguintes localidades: Região de Moitas, Arari e Trizidela. O ônibus estará disponível em horários específicos, e os detalhes serão fornecidos em breve.</p>
+                
+                    <p><strong>Sugestão de Vestuário:</strong><br>
+                    Por favor, evitem usar roupas na cor <span class="terracota-sample"></span> terracota (uma tonalidade de laranja queimado), que será a cor utilizada pelos padrinhos. Sugerimos outras cores para evitar coincidências indesejadas e para que todos possam se destacar de maneira especial neste dia. Além disso, por se tratar de um evento formal, solicitamos que evitem roupas muito curtas ou vulgares, mantendo uma aparência elegante e adequada à ocasião.</p>
+                
+                    <p><strong>Orientações para o Casamento ao Ar Livre:</strong><br>
+                    Nosso casamento será realizado ao ar livre, em um cenário encantador sobre um gramado. Pedimos que considerem as seguintes orientações:
+                    <ul>
+                        <li>Recomendamos o uso de calçados confortáveis, pois a cerimônia será realizada sobre o gramado.</li>
+                        <li>Estejam preparados para as condições climáticas. Embora tenhamos planos de contingência, sugerimos que tragam proteção contra o sol ou possíveis chuvas.</li>
+                        <li>Sugerimos também que tragam repelente de insetos, caso seja necessário.</li>
+                    </ul>
+                    </p>
+                
+                    <p>Estamos ansiosos para compartilhar este momento especial com todos vocês!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="ceremony-background">
+    <img src="fundo2.jpeg" alt="Imagem de fundo para a cerimônia">
+</div>
+
+
+<section id="rsvp">
+    <div class="container">
+        <h2>Confirme sua Presença</h2>
+        <button class="show-form" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdY8ZOFmjzvjeHJEm3CmUNbei5V31RjcZGMgCDetXjD0N93iw/viewform', '_blank')">Confirmar Presença</button>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY8ZOFmjzvjeHJEm3CmUNbei5V31RjcZGMgCDetXjD0N93iw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section id="gallery">
+    
+    <div class="gallery-overlay">
+    <div class="container">
+        <h2>Nossos Padrinhos e Madrinhas</h2>
+        <div class="casal">
+            <div class="padrinho">
+                <img src="leandroP.jpg" alt="Foto do Padrinho 1">
+                <p>Leandro Barros</p>
+            </div>
+            <div class="madrinha">
+                <img src="rafaelaM.jpg" alt="Foto da Madrinha 1">
+                <p>Rafaela Maciel</p>
+            </div>
+        </div>
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="viniP.jpg" alt="Foto do Padrinho 1">
+                <p>Vinicius Soares</p>
+            </div>
+            <div class="madrinha">
+                <img src="mairlaM.jpg" alt="Foto da Madrinha 1">
+                <p>Mairla Santos</p>
+            </div>
+        </div>
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="cesarP.jpg" alt="Foto do Padrinho 1">
+                <p>Antonio Cesar</p>
+            </div>
+            <div class="madrinha">
+                <img src="bernadinaM.jpg" alt="Foto da Madrinha 1">
+                <p>Bernadina Fernandes</p>
+            </div>
+        </div>
+
+
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="wesP.jpg" alt="Foto do Padrinho 1">
+                <p>Wesley Carvalho</p>
+            </div>
+            <div class="madrinha">
+                <img src="biancaM.jpg" alt="Foto da Madrinha 1">
+                <p>Bianca</p>
+            </div>
+        </div>
+
+
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="lucasP.jpg" alt="Foto do Padrinho 1">
+                <p>Lucas Oliveira</p>
+            </div>
+            <div class="madrinha">
+                <img src="taisM.jpg" alt="Foto da Madrinha 1">
+                <p>Thais</p>
+            </div>
+        </div>
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="joarinsonP.jpg" alt="Foto do Padrinho 1">
+                <p>Joarison Salviano</p>
+            </div>
+            <div class="madrinha">
+                <img src="renamM.jpg" alt="Foto da Madrinha 1">
+                <p>Renata Coelho</p>
+            </div>
+        </div>
+
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="chicoP.jpg" alt="Foto do Padrinho 1">
+                <p>Francisco</p>
+            </div>
+            <div class="madrinha">
+                <img src="ruteM.jpg" alt="Foto da Madrinha 1">
+                <p>Ruteh</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="antonioCarloP.jpg" alt="Foto do Padrinho 1">
+                <p>João Carlos</p>
+            </div>
+            <div class="madrinha">
+                <img src="mariaM.jpg" alt="Foto da Madrinha 1">
+                <p>Maria Fernandes
+                </p>
+            </div>
+        </div>
+
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="semfoto.jpg" alt="Foto do Padrinho 1">
+                <p> Mateus </p>
+            </div>
+            <div class="madrinha">
+                <img src="camiM.jpg" alt="Foto da Madrinha 1">
+                <p>Camila Soares</p>
+            </div>
+        </div>
+
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="gleidsonP.jpg" alt="Foto do Padrinho 1">
+                <p>Gleidson </p>
+            </div>
+            <div class="madrinha">
+                <img src="nazareM.jpg" alt="Foto da Madrinha 1">
+                <p>Nazaré</p>
+            </div>
+        </div>
+
+
+        <div class="casal">
+            <div class="padrinho">
+                <img src="samukaP.jpg" alt="Foto do Padrinho 1">
+                <p>Samuel </p>
+            </div>
+            <div class="madrinha">
+                <img src="geanaM.jpg" alt="Foto da Madrinha 1">
+                <p>Geogeana</p>
+            </div>
+        </div>
+
+
+        <!--
+        <div class="casal">
+            <div class="padrinho">
+                <img src="padrinho2.jpg" alt="Foto do Padrinho 2">
+                <p>Nome do Padrinho 2</p>
+            </div>
+            <div class="madrinha">
+                <img src="madrinha2.jpg" alt="Foto da Madrinha 2">
+                <p>Nome da Madrinha 2</p>
+            </div>
+        </div>
+
+        !--->
+
+        <!-- Adicione mais divs para cada casal de padrinhos e madrinhas conforme necessário -->
+    </div>
+</div>
+</section>
+
+
+
+<!--
+<section id="gifts">
+    <div class="container">
+        <h2>Lista de Presentes</h2>
+        Inserir lista de presentes 
+    </div>
+</section>
+
+-->
+
+
+<section id="video">
+    <div class="container">
+        <h2>Nossa História</h2>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H7x4kfL3ZD0?si=j9kG7ryuYTaZjSkl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="fotos">
+    <div class="container">
+        <h2>Nossos Pais</h2>
+
+        <div class="fotos-wrapper">
+            <!-- Inserir fotos dos pais aqui -->
+            <div class="pai-noiva">
+                <img src="paiNoiva.jpg" alt="Foto do Pai da Noiva">
+                <p>Pais da Noiva</p>
+            </div>
+           
+            <!-- Adicionar mais divs para as fotos dos pais conforme necessário -->
+            <div class="pai-noivo">
+                <img src="paiNoivo.jpg" alt="Foto do Pai do Noivo">
+                <p>Pais do Noivo</p>
+            </div>
+            
+            <!-- Adicionar mais divs para as fotos dos pais conforme necessário -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<footer>
+    <p>© 2024 Casamento de Italo & Joyce</p>
+</footer>
+
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+    var audio = document.getElementById('bg-music');
+    var video = document.getElementById('video-frame');
+
+    video.addEventListener('play', function() {
+        audio.pause();
+    });
+
+    video.addEventListener('pause', function() {
+        audio.play();
+    });
+</script>
+
+
+ 
+<script>
+    // Inicia a reprodução da música quando o DOM estiver pronto
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('bg-music');
+        audio.play();
+    });
+</script>
+
+
+
+
+
+<script>
+    // Função para calcular e exibir o cronômetro
+    function mostrarCronometro() {
+        // Data do casamento (ano, mês - 1, dia, hora, minuto, segundo)
+        var dataCasamento = new Date(2024, 5, 1, 15, 30, 0); // 01 de junho de 2024
+
+        // Data atual
+        var dataAtual = new Date();
+
+        // Calcula a diferença entre as datas em milissegundos
+        var diferenca = dataCasamento - dataAtual;
+
+        // Verifica se a data do casamento já passou
+        if (diferenca < 0) {
+            document.getElementById("countdown").innerHTML = "O casamento já aconteceu!";
+            return;
+        }
+
+        // Calcula os dias, horas, minutos e segundos restantes
+        var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+        var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+        var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+        // Exibe o cronômetro
+        document.getElementById("countdown").innerHTML = "Faltam " + dias + " dias, " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos para o casamento.";
+    }
+
+    // Atualiza o cronômetro a cada segundo
+    setInterval(mostrarCronometro, 1000);
+
+    // Chama a função uma vez para garantir que o cronômetro seja exibido imediatamente
+    mostrarCronometro();
+</script>
+
+
+
+</body>
+
+
+
+
+</html>

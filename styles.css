@@ -1,0 +1,359 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Adiciona a fonte Roboto */
+    background-color: #ffffff;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('fundo.jpeg');
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ceremony-background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('fundo2.jpeg');
+    background-size: cover;
+    background-position: center top;
+}
+
+
+.ceremony-background img {
+    width: 100%;
+    height: auto;
+    background-position: center top;
+
+  
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 114, 91, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+
+    position: relative;
+
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; /* Adiciona a fonte Roboto */
+}
+
+h2 {
+    color: #c95941;
+    font-family: 'Roboto', sans-serif; /* Adiciona a fonte Roboto */
+}
+
+section {
+    padding: 80px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 0;
+    border: none;
+    transition: height 0.3s ease; /* Adiciona transição suave para a altura do iframe */
+}
+
+button.show-form {
+    background-color: #e2725b;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona transição suave para a cor do botão */
+    font-family: 'Roboto', sans-serif; /* Adiciona a fonte Roboto */
+}
+
+button.show-form:hover {
+    background-color: #c95941; /* Altera a cor do botão ao passar o mouse */
+}
+
+footer {
+    background-color: #e2725b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif; /* Adiciona a fonte Roboto */
+}
+.casal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.padrinho,
+.madrinha {
+    text-align: center;
+    width: 47%; /* Cada moldura terá 45% da largura da seção */
+    margin-right: 5%; /* Adicionando uma margem direita de 5% para criar espaço entre as molduras */
+
+}
+
+/* Adicionando um estilo para o último elemento da classe 'casal' para remover a margem direita */
+.casal:last-child .padrinho,
+.casal:last-child .madrinha {
+    margin-right: 3%;
+}
+
+.padrinho img,
+.madrinha img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Moldura redonda */
+    margin-bottom: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.padrinho p,
+.madrinha p {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa a fonte em negrito */
+    color: #333; /* Altera a cor do texto para um tom mais escuro */
+    text-transform: uppercase; /* Deixa o texto em caixa alta */
+    letter-spacing: 1px; /* Adiciona um espaçamento entre as letras */
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Adicione um espaçamento inferior para separar o texto das imagens */
+}
+
+
+
+
+
+
+
+/* Estilo para o vídeo */
+#video {
+    background-color: #f2f2f2; /* Cor de fundo para o vídeo */
+    padding: 80px 0;
+    background-image: url('fundo4.jpg'); /* Adicione o caminho para a imagem desejada */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    opacity: 0; /* Inicialmente oculta */
+    transition: opacity 0.5s ease; /* Adiciona transição suave para a opacidade */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Proporção do vídeo (16:9) */
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para as fotos dos pais */
+#fotos {
+    padding: 80px 0;
+    background-image: url('fundo3.jpg'); /* Adicione o caminho para a imagem desejada */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    opacity: 0; /* Inicialmente oculta */
+    transition: opacity 0.5s ease; /* Adiciona transição suave para a opacidade */
+
+
+}
+
+
+
+
+.fotos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fotos-wrapper .pai-noiva,
+.fotos-wrapper .mae-noiva,
+.fotos-wrapper .pai-noivo,
+.fotos-wrapper .mae-noivo {
+    text-align: center;
+    width: 45%; /* Largura das divs das fotos */
+    margin-bottom: 20px;
+}
+
+/* Estilizando as imagens */
+.fotos-wrapper img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Defina a largura máxima */
+    max-height: 300px; /* Defina a altura máxima */
+    border-radius: 10px; /* Moldura quadrada com bordas arredondadas */
+    margin-bottom: 10px;
+    border: 2px solid #e2725b; /* Adiciona uma borda sólida com a cor desejada */
+}
+
+.fotos-wrapper p {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa a fonte em negrito */
+    color: #333; /* Altera a cor do texto para um tom mais escuro */
+    text-transform: uppercase; /* Deixa o texto em caixa alta */
+    letter-spacing: 1px; /* Adiciona um espaçamento entre as letras */
+}
+
+
+
+/* Estilo para a seção de Padrinhos e Madrinhas */
+/* Estilo para a seção de Padrinhos e Madrinhas */
+#gallery {
+    position: relative;
+    padding: 80px 0;
+    background-image: url('fund6.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+}
+
+#gallery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 114, 91, 0.5);
+    opacity: 1;
+}
+
+#gallery .container {
+    position: relative;
+    z-index: 1;
+}
+
+#gallery h2 {
+    color: #ffffff; /* Cor do texto branca */
+}
+
+
+
+/* Estilo para o vídeo */
+
+
+
+/* Estilo para o vídeo */
+#video {
+    position: relative;
+    padding: 80px 0;
+    background-color: #f2f2f2; /* Cor de fundo para o vídeo */
+    background-image: url('fundo4.jpg'); /* Adicione o caminho para a imagem desejada */
+    background-size: cover;
+    background-position: center;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Proporção do vídeo (16:9) */
+    overflow: hidden;
+    border: 2px solid #ffffff; /* Adicione a borda branca */
+    border-radius: 10px; /* Adicione bordas arredondadas, se desejar */
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* Animação para as fotos dos padrinhos e madrinhas */
+/* Animação para as fotos dos padrinhos e madrinhas */
+
+
+@keyframes pulse {
+
+
+
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        filter: brightness(150%); /* Aumenta o brilho da imagem */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.padrinho img,
+.madrinha img {
+    animation: pulse 2s infinite; /* Aplica a animação */
+}
+
+
+/* Adicione esta regra ao seu arquivo CSS */
+
+/* Estilos para garantir que todo o texto seja exibido */
+.content {
+    white-space: normal; /* Permite que o texto quebre normalmente */
+}
+
+
